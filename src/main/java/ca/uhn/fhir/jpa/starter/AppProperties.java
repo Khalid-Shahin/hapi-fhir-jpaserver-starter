@@ -50,7 +50,7 @@ public class AppProperties {
   private Long reuse_cached_search_results_millis = 60000L;
   private String server_address = null;
   private EncodingEnum default_encoding = EncodingEnum.JSON;
-  private FhirVersionEnum fhir_version = FhirVersionEnum.R4;
+  private FhirVersionEnum fhir_version = FhirVersionEnum.R5;
   private ClientIdStrategyEnum client_id_strategy = ClientIdStrategyEnum.ALPHANUMERIC;
   private List<String> supported_resource_types = new ArrayList<>();
   private List<Bundle.BundleType> allowed_bundle_types = null;
@@ -463,7 +463,7 @@ public class AppProperties {
     private String name = "Local Tester";
     private String server_address = "http://localhost:8080/fhir";
     private Boolean refuse_to_fetch_third_party_urls = true;
-    private FhirVersionEnum fhir_version = FhirVersionEnum.R4;
+    private FhirVersionEnum fhir_version = FhirVersionEnum.R5;
 
     public FhirVersionEnum getFhir_version() {
       return fhir_version;
